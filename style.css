@@ -12,8 +12,8 @@ body {
 }
 
 .container {
-/*   display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   row-gap: 40px;
   color: white;
   padding: 5%;
@@ -166,6 +166,7 @@ body {
 .blogs {
   display: flex;
   flex: 0 1;
+  padding-left: 50px;
   flex-direction: column;
   justify-content: space-between;
   row-gap: 10px;
