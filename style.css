@@ -183,6 +183,7 @@ body {
 
 .about {
   display: flex;
+  flex: 0 1;
   flex-direction: column;
   row-gap: 20px;
   justify-content: space-between;
