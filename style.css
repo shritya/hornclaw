@@ -87,15 +87,15 @@ body {
 
 .socials {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
 .uo-socials {
-  display: grid;
+  display: flex;
   color: #ffb41f;
-  grid-auto-flow: row;
+  flex-direction: row;
   column-gap: 10px;
   align-self: center;
   text-decoration: none;
@@ -103,8 +103,6 @@ body {
 }
 
 .social-li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   border: 2px solid #ffb41f;
@@ -183,7 +181,7 @@ body {
 
 .about {
   display: flex;
-  flex: 0 1;
+  flex: 1 0 100%;
   flex-direction: column;
   row-gap: 20px;
   justify-content: space-between;
@@ -267,6 +265,10 @@ footer.social {
     grid-auto-flow: column;
     padding: 10%;
   }
+  .social-li {
+  flex-direction: row;
+}
+
   .key-feature {
     flex-direction: row;
   }
