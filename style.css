@@ -231,7 +231,6 @@ body {
 footer.social {
   background-color: #383838;
   padding: 2%;
-  display: -ms-grid;
   display: grid;
   grid-area: span;
   row-gap: 30px;
