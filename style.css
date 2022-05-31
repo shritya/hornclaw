@@ -333,6 +333,9 @@ footer.social {
     column-gap: 100px;
     justify-content: space-between;
   }
+  .about-para{
+    overflow: scroll;
+  }
   .decorative-ht {
   }
   .footer {
