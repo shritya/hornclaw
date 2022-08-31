@@ -7,13 +7,33 @@
 body {
   font-family: "Poppins", "Inter", sans-serif;
 }
+.stick {
+  position: fixed;
+  z-index: 1;
+
+}
+.stick-img {
+  top: 78vh;
+  left: 94vw;
+  position: absolute;
+  height: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .stick-img {
+    top: 85vh;
+    left: 84vw;
+    height: 25px;
+  }
+}
 header {
   /* background-color: #B3E283; */
 
   /* background-color: #85EF47; */
   background-color: black;
   color: white;
+  /* height: 9vh; */
   height: 20%;
+
 }
 nav {
   display: flex;
@@ -22,6 +42,9 @@ nav {
   margin: auto;
   height: 100%;
   width: 90%;
+}
+nav a {
+  text-decoration: none;
 }
 .logo {
   /* top: 5px; */
@@ -85,31 +108,10 @@ nav {
     flex-direction: column;
     /* row-gap: 10px; */
   }
-  body{
-    font-size: 12px;
-  }
 }
 /* HEADER END */
 /* HERO START */
-.stick {
-  position: fixed;
-  z-index: 1;
 
-}
-.stick-img {
-  top: 78vh;
-  left: 94vw;
-  position: absolute;
-  height: 50px;
-}
-@media screen and (max-width: 1024px) {
-  .stick-img {
-    top: 85vh;
-    left: 89vw;
-    height: 35px;
-
-  }
-}
 .hero {
   background-image: url(./assets/190501-Healthcare.jpg);
   height: 100%;
@@ -194,9 +196,7 @@ nav {
   background-color: white;
   border-radius: 15px;
   padding: 10px;
-  min-width: 2px;
-  /* animation: myAnim 2s ease 0s 1 normal forwards; */
-  animation: myAnim 0.3s ease 0s 1 normal forwards;
+  animation: myAnim 0.1s ease 0s 1 normal forwards;
 }
 .quality-service:hover {
   color: green;
@@ -208,15 +208,11 @@ nav {
   max-height: 50px;
   max-width: 50px;
   height: 40%;
-  /* width: 50%; */
-  min-height: 40px;
-  min-width: 40px;
+  width: 50%;
+  min-height: 45px;
+  min-width: 45px;
 }
-@media screen and (min-width:360px){
-  .hero-qualities{
-    flex-direction: column;
-  }
-}
+
 @media screen and (max-width: 1024px) {
   .hero-content {
     flex-direction: column;
@@ -227,169 +223,109 @@ nav {
     width: 100%;
   }
   .hero-qualities {
-    flex: 0 1 60%;
+    flex: 0 1;
     flex-direction: row;
-    column-gap: 10px;
+    column-gap: 20px;
     justify-content: center;
     align-items: center;
   }
   .quality-service {
     display: flex;
-    padding: 10px;
-    font-size: 10px;
     flex-direction: column;
-    align-items: center;
     row-gap: 10px;
     align-items: center;
-    height: 110px;
-    width: 50%;
+  }
+  body{
+    font-size: 12px;
   }
 }
-/* HERO STYLING END */
-/* PRODUCT SECTION START */
-/* PRODUCT ONE */
-.product-adwait {
-  padding: 50px 0 50px 0;
-}
-.product-section {
-  text-align: center;
+#myForm {
+  width: 70%;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin: auto;
-  row-gap: 8px;
-}
-.product-one {
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 10px;
-}
-.product-card {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  padding: 5px;
-  row-gap: 10px;
-  width: 250px;
-  border: 1px solid white;
-  border-radius: 10px;
   align-items: center;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
-  /* animation: myAnim 2s ease 0s 1 normal forwards; */
-  animation: myAnim 0.3s ease 0s 1 normal forwards;
-}
-.product-card a {
-  text-decoration: none;
-  color: black;
-}
-.product-img {
-  width: 80%;
-  /* animation: myAnim 2s ease 0s 1 normal forwards; */
-  animation: myAnim 0.3s ease 0s 1 normal forwards;
-}
-.product-card:hover {
-  color: green;
-  background-color: aliceblue;
-  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.75);
-}
-/* PRODUCT ONE END  */
-/* PRODUCT TWO START */
-.adwait {
-  visibility: hidden;
-  margin: 10px 0 20px 0;
-}
-.product-two {
-  text-align: center;
   justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 10px;
+  row-gap: 20px;
+  /* border-radius: 12px; */
 }
-.see-more {
-  visibility: hidden;
-  width: 30%;
-  align-self: center;
-  border: 3px solid black;
-  border-radius: 12px;
-  background-color: yellow;
+h1 {
+  text-align: center;
+}
+.name {
+  width: 40%;
+  border: 2px solid black;
+  border-radius: 4px;
   height: 30px;
-  margin: 10px 0 20px 0;
 }
-.product-two-catalog {
-  text-decoration: none;
+.name::placeholder {
   color: black;
+  font-family: "Poppins", "Inter", sans-serif;
 }
-.product-card-hidden:hover {
-  color: green;
-  background-color: aliceblue;
-  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.75);
+.pincode {
+  width: 40%;
+  border: 2px solid black;
+  border-radius: 4px;
+  height: 30px;
 }
-.product-card-hidden {
+.pincode::placeholder {
+  color: black;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+.date {
   display: flex;
-  flex-direction: column;
-  margin: 10px;
-  row-gap: 10px;
-  width: 250px;
-  padding: 5px;
-  border: 1px inset black;
+  width: 40%;
+  column-gap: 20px;
+}
+.form-date {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.margin {
+  display: flex;
   align-items: center;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
-  color: black;
-  animation: myAnim 0.3s ease 0s 1 normal forwards;
-
-  /* animation: myAnim 2s ease 0s 1 normal forwards; */
+  justify-content: center;
+  margin-bottom: 20px;
 }
-.product-card-hidden a {
-  text-decoration: none;
-  color: black;
-}
+.btn {
+  width: 10%;
 
-@media screen and (max-width: 650px) {
-  .product-section {
+  min-width: 100px;
+  height: 6vh;
+  min-height: 40px;
+  /* height: 40%; */
+  /* margin: 10px auto; */
+  text-align: center;
+  /* width: 10vw; */
+  font-size: 20px;
+  font-weight: 400;
+  background-color: gold;
+  border: none;
+  border-radius: 12px;
+}
+@media screen {
+  #myForm {
     width: 100%;
   }
-  .product-one {
-    flex-wrap: wrap;
-  }
-  .product-two {
-    width: 100%;
-  }
-  .product-card {
-    flex: 0 0 auto;
-    cursor: pointer;
-    text-align: center;
-    width: 73%;
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.75);
-  }
-
-  .product-card-hidden {
-    display: none;
-    box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.75);
-  }
-  .see-more {
-    visibility: visible;
+  .date {
+    flex-direction: column;
   }
 }
-/* PRODUCT SECTION END HERE */
-/* FOOTER START HERE */
 .end {
   background-color: black;
 }
 footer {
   color: white;
   display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
   flex-direction: column;
   width: 80%;
   flex-wrap: wrap;
   margin: auto;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 10px;
-  padding-top: 10px;
-
 }
 .footer-logo {
   height: 80px;
@@ -430,7 +366,7 @@ footer {
     row-gap: 20px;
   }
   .link-footer {
-    /* width: 100%; */
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -440,4 +376,3 @@ footer {
     list-style: none;
   }
 }
-/* Animations */
